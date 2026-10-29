@@ -1,0 +1,21 @@
+# Raw EMG recordings — not distributed here. Place the tree at the repo root to
+# run the full analysis; see docs/data.md.
+tSCS_CHUV_data/
+
+# Session logs — placement, timings and free-text clinical notes. Never commit these.
+*.xlsx
+*.xls
+
+# Environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Notebook and editor cruft
+.ipynb_checkpoints/
+*.bak
+.DS_Store
+.vscode/
+.idea/
+.claude/

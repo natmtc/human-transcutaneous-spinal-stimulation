@@ -1,0 +1,33 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Natalia Torres Consul and the study authors
+
+Applies to the derived data in results/ and the documentation in docs/.
+The code in src/, notebooks/ and tools/ is licensed separately under the MIT
+License — see LICENSE.
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, link to the licence, and
+indicate if changes were made.
+
+The full legal text is at:
+
+    https://creativecommons.org/licenses/by/4.0/legalcode
+
+A plain-language summary is at:
+
+    https://creativecommons.org/licenses/by/4.0/
+
+ATTRIBUTION
+
+  Please cite the dataset as directed in CITATION.cff.
+
+SCOPE
+
+  results/ contains derived measurements only: hand-picked motor thresholds,
+  per-pulse peak-to-peak EMG amplitudes, response latencies and
+  signal-to-noise values, for pseudonymous participants P03-P06.
+
+  Raw EMG recordings and session logs are NOT covered by this licence and are
+  not distributed here. They are available from the authors on request,
+  subject to the consent and ethics terms of the study. See docs/data.md.

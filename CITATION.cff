@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: >-
+  Human transcutaneous spinal cord stimulation — EMG analysis
+message: >-
+  If you use this software or the derived data, please cite it using the
+  metadata below.
+type: software
+abstract: >-
+  Analysis code and derived data for a study of arm muscle EMG responses to
+  transcutaneous spinal cord stimulation in healthy volunteers. Two
+  stimulation protocols — 30 Hz monophasic bursts and ARC-EX (a 10 kHz
+  carrier at the same pulse rate) — are compared under topical lidocaine,
+  tendon vibration, stimulation polarity and pulse rate. Includes
+  hand-picked per-muscle motor thresholds, per-pulse peak-to-peak response
+  amplitudes and response latencies for four participants.
+authors:
+  # TO CONFIRM: spelling, affiliation and ORCID; add co-authors in author order.
+  - given-names: Natalia
+    family-names: Torres Consul
+    # orcid: 'https://orcid.org/0000-0000-0000-0000'
+    # affiliation: Centre hospitalier universitaire vaudois (CHUV), Lausanne, Switzerland
+repository-code: >-
+  https://github.com/natmtc/human-transcutaneous-spinal-stimulation
+license: MIT
+license-url: >-
+  https://github.com/natmtc/human-transcutaneous-spinal-stimulation/blob/main/LICENSE
+keywords:
+  - transcutaneous spinal cord stimulation
+  - tSCS
+  - electromyography
+  - EMG
+  - spinal reflexes
+  - afferent pathways
+  - tendon vibration
+  - post-activation depression
+  - neuromodulation
+# TO CONFIRM before release: tag a version, set the release date, and add the
+# Zenodo DOI once the repository is archived.
+# version: 1.0.0
+# date-released: '2026-00-00'
+# doi: 10.5281/zenodo.0000000
