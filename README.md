@@ -113,6 +113,7 @@ See [CITATION.cff](CITATION.cff).
 
 ## Licence
 
-Code (`src/`, `notebooks/`, `tools/`) is released under the **MIT Licence** — see
-[LICENSE](LICENSE). Derived data (`results/`) and documentation are released under
-**CC BY 4.0** — see [LICENSE-DATA](LICENSE-DATA).
+Code (`src/`, `notebooks/`, `tools/`) is **MIT** — see [LICENSE](LICENSE). Derived data
+(`results/`) and documentation are **CC BY 4.0** — see [LICENSE-DATA](LICENSE-DATA).
+Raw recordings and session logs are covered by neither; details in
+[docs/licensing.md](docs/licensing.md).
