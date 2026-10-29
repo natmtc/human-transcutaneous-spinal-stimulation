@@ -53,7 +53,7 @@ before trusting its numbers.
 | module | |
 |---|---|
 | [`quantify.py`](../src/functions/quantify.py), [`compare.py`](../src/functions/compare.py), [`average.py`](../src/functions/average.py) | still used by the per-session notebooks |
-| [`snr.py`](../src/functions/snr.py) | **no longer called by any notebook.** Retained because it produced the committed `results/*/SNR_*.csv` files; kept so their provenance is not orphaned. |
+| [`snr.py`](../src/functions/snr.py) | **no longer called by any notebook.** Retained because it produced the `SNR_*.csv` files in the study's derived data; kept so their provenance is not orphaned. |
 
 ---
 

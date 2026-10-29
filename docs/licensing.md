@@ -5,16 +5,19 @@ This repository is released under two licences, because it contains two kinds of
 | what | licence | file |
 |---|---|---|
 | **Code** — `src/`, `notebooks/`, `tools/` | MIT | [../LICENSE](../LICENSE) |
-| **Derived data** — `results/` — and **documentation** — `docs/` | CC BY 4.0 | [../LICENSE-DATA](../LICENSE-DATA) |
+| **Documentation** — `docs/`, `README.md` | CC BY 4.0 | [../LICENSE-DATA](../LICENSE-DATA) |
 
 Copyright © 2026 Natalia Torres Consul and the study authors.
 
-GitHub displays the repository as MIT, since that is the licence of the code it contains. The
-derived data in `results/` is CC BY 4.0; please attribute it as directed in
-[../CITATION.cff](../CITATION.cff).
+GitHub displays the repository as MIT, since that is the licence of the code it contains. Please
+cite as directed in [../CITATION.cff](../CITATION.cff).
 
-## Not covered
+## Not covered — all participant data
 
-**Raw EMG recordings and session logs are not distributed here and are not covered by either
-licence.** They are available from the authors on request, subject to the consent and ethics
-terms of the study. See [data.md](data.md#availability).
+**The raw EMG recordings, the derived per-participant measurements and the session logs are not
+distributed in this repository and are covered by neither licence.** They are available from the
+authors on request, subject to the consent and ethics terms of the study — see
+[data.md](data.md#availability).
+
+Obtaining them under a data-sharing agreement does not place them under CC BY 4.0: the terms of
+that agreement govern, not this file.

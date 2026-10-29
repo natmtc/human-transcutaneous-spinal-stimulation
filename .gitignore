@@ -1,6 +1,9 @@
-# Raw EMG recordings — not distributed here. Place the tree at the repo root to
-# run the full analysis; see docs/data.md.
+# PARTICIPANT DATA — none of it is distributed in this repository.
+# Raw recordings: place the tree at the repo root to run the analysis.
 tSCS_CHUV_data/
+# Derived per-participant measurements: thresholds, amplitudes, latencies, SNR.
+# The notebooks write these locally. Do not commit them; see docs/data.md.
+results/
 
 # Session logs — placement, timings and free-text clinical notes. Never commit these.
 *.xlsx

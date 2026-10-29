@@ -169,10 +169,13 @@ proof of pathway.
 
 ## 7 · Provenance
 
-Notebook outputs are stripped before commit (see [reproduce.md](reproduce.md)), so the repository
-records *code and derived data*, not rendered figures. The hand-picked thresholds in `results/`
-are the one irreproducible input, and they are version-controlled: `git log -p results/` is the
-complete history of every pick.
+Notebook outputs are stripped before commit (see [reproduce.md](reproduce.md)), so this
+repository records *code*, not rendered figures and not data.
+
+The hand-picked thresholds are the one irreproducible input. They are version-controlled in the
+study's own private repository, where `git log -p results/` is the complete history of every
+pick — which trace was chosen for which muscle, and when it was changed. That history is part of
+the study record and stays with the data, not with this code release.
 
 Each notebook also calls `warn_if_stale`, which compares the threshold file's timestamp against
 the figures being drawn and warns if a pick has changed since.

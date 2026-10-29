@@ -1,18 +1,18 @@
 cff-version: 1.2.0
 title: >-
-  Human transcutaneous spinal cord stimulation — EMG analysis
+  Human transcutaneous spinal cord stimulation — EMG analysis code
 message: >-
-  If you use this software or the derived data, please cite it using the
-  metadata below.
+  If you use this software, please cite it using the metadata below.
 type: software
 abstract: >-
   Analysis code and derived data for a study of arm muscle EMG responses to
   transcutaneous spinal cord stimulation in healthy volunteers. Two
   stimulation protocols — 30 Hz monophasic bursts and ARC-EX (a 10 kHz
   carrier at the same pulse rate) — are compared under topical lidocaine,
-  tendon vibration, stimulation polarity and pulse rate. Includes
-  hand-picked per-muscle motor thresholds, per-pulse peak-to-peak response
-  amplitudes and response latencies for four participants.
+  tendon vibration, stimulation polarity and pulse rate. Measures per-muscle
+  motor thresholds, per-pulse peak-to-peak response amplitudes and response
+  latencies. Code and documentation only; no participant data is distributed
+  with it.
 authors:
   # TO CONFIRM: spelling, affiliation and ORCID; add co-authors in author order.
   - given-names: Natalia

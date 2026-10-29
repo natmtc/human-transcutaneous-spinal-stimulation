@@ -14,9 +14,9 @@ thirteen arm muscles. Two stimulation protocols were compared — **30 Hz monoph
 | **stimulation polarity** — cathodic, anodic, biphasic | whether polarity changes threshold or response size |
 | **pulse rate** — 1, 30, 50 Hz | how the response behaves as pulses arrive closer together |
 
-Everything here is reproducible from the derived data in [results/](results/), and fully
-reproducible from the raw recordings, which are available on request — see
-**[docs/data.md](docs/data.md)**.
+**No participant data is distributed here** — neither the raw recordings nor the derived
+per-participant measurements. Both are available from the authors on request, subject to the
+consent and ethics terms of the study. See **[docs/data.md](docs/data.md)**.
 
 ---
 
@@ -29,6 +29,7 @@ reproducible from the raw recordings, which are available on request — see
 | find or re-use the data | **[docs/data.md](docs/data.md)** |
 | run the notebooks yourself | **[docs/reproduce.md](docs/reproduce.md)** |
 | read or extend the code | **[docs/code.md](docs/code.md)** |
+| know what may be re-used, and what is not licensed here | **[docs/licensing.md](docs/licensing.md)** |
 
 The single most important thing to know before reading any figure is in
 [docs/analysis.md](docs/analysis.md): **no millivolt or milliamp value is ever compared between
@@ -85,13 +86,15 @@ picks from disk and never re-derives them.
 ```
 src/functions/         all analysis code (see docs/code.md)
 notebooks/             one folder per session, plus across_participants/ and motor_thresholds/
-results/<session>/     derived data: picked thresholds, per-pulse amplitudes, latencies (CSV)
+results/<session>/     derived data — NOT distributed; written here when you run the notebooks
 figures/               where notebooks save figures when asked to; empty by default
 docs/                  methods, analysis decisions, data, reproduction, code map
 tools/                 the git filter that keeps notebook outputs out of the repository
 ```
 
-Raw EMG recordings are **not** in this repository — see [docs/data.md](docs/data.md).
+**Neither the raw recordings nor the derived data are in this repository.** Both directories are
+`.gitignore`d, so running the notebooks populates them locally without ever committing them.
+See [docs/data.md](docs/data.md).
 
 ---
 
@@ -113,7 +116,6 @@ See [CITATION.cff](CITATION.cff).
 
 ## Licence
 
-Code (`src/`, `notebooks/`, `tools/`) is **MIT** — see [LICENSE](LICENSE). Derived data
-(`results/`) and documentation are **CC BY 4.0** — see [LICENSE-DATA](LICENSE-DATA).
-Raw recordings and session logs are covered by neither; details in
-[docs/licensing.md](docs/licensing.md).
+Code (`src/`, `notebooks/`, `tools/`) is **MIT** — see [LICENSE](LICENSE). The documentation in
+`docs/` is **CC BY 4.0** — see [LICENSE-DATA](LICENSE-DATA). Participant data is covered by
+neither licence and is not distributed here; details in [docs/licensing.md](docs/licensing.md).

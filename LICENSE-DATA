@@ -2,7 +2,7 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 Copyright (c) 2026 Natalia Torres Consul and the study authors
 
-Applies to the derived data in results/ and the documentation in docs/.
+Applies to the documentation in docs/ and README.md.
 The code in src/, notebooks/ and tools/ is licensed separately under the MIT
 License — see LICENSE.
 
@@ -24,10 +24,10 @@ ATTRIBUTION
 
 SCOPE
 
-  results/ contains derived measurements only: hand-picked motor thresholds,
-  per-pulse peak-to-peak EMG amplitudes, response latencies and
-  signal-to-noise values, for pseudonymous participants P03-P06.
+  NO PARTICIPANT DATA IS COVERED BY THIS LICENCE.
 
-  Raw EMG recordings and session logs are NOT covered by this licence and are
-  not distributed here. They are available from the authors on request,
-  subject to the consent and ethics terms of the study. See docs/data.md.
+  The raw EMG recordings, the derived per-participant measurements (motor
+  thresholds, peak-to-peak amplitudes, latencies, signal-to-noise) and the
+  session logs are NOT distributed in this repository and are NOT licensed
+  here. They are available from the authors on request, subject to the
+  consent and ethics terms of the study. See docs/data.md.

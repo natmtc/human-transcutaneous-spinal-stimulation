@@ -9,13 +9,15 @@ python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
-## 2 · Add the raw recordings (for the full analysis)
+## 2 · Add the data
+
+**No participant data ships with this repository.** To run anything you need the recordings from
+the authors — see [data.md](data.md#availability).
 
 Place the recordings tree at the repository root as `tSCS_CHUV_data/`, laid out as described in
-[data.md](data.md#directory-layout). It is `.gitignore`d, so it will not be committed.
-
-Raw recordings are available from the authors on request — see
-[data.md](data.md#availability).
+[data.md](data.md#directory-layout). If you also obtain the picked motor thresholds, put them at
+`results/<session>/`. Both directories are `.gitignore`d, so neither can be committed by
+accident.
 
 ## 3 · Run
 
@@ -39,16 +41,18 @@ Run order, if starting from scratch:
 The threshold pickers need an interactive backend (`ipympl`, installed by
 `requirements.txt`); they will not work in a plain static renderer.
 
-## What runs without the raw recordings
+## What runs with what
 
-| | without raw data |
+| you have | what runs |
 |---|---|
-| threshold tables, amplitude bar figures, group summaries | **yes** — they read `results/` |
-| waterfalls, EMG trace panels, peak-detection grids, noise checks, latency examples | no — these draw the traces |
-| re-picking a motor threshold | no |
+| code only | nothing that produces a number — the notebooks read for themselves and will report missing inputs |
+| recordings only | everything, starting from `pick_motor_thresholds.ipynb`: you pick the thresholds yourself and every figure follows |
+| recordings **and** the picked thresholds | everything, reproducing the published figures from the authors' own picks |
 
-So the headline numbers can be checked from this repository alone; inspecting the traces behind
-them needs the recordings.
+The hand-picked motor thresholds are the one input that cannot be derived — they are a human
+judgement about which trace is the first real response (see
+[analysis.md](analysis.md#2--the-intensity-every-muscle-is-read-at)). Request them with the
+recordings if you intend to reproduce the published numbers rather than re-derive them.
 
 ## What the thresholds control
 

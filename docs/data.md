@@ -2,25 +2,40 @@
 
 ## Availability
 
+**No participant data is distributed in this repository.**
+
 | | in this repository | |
 |---|---|---|
-| **Derived data** — picked motor thresholds, per-pulse amplitudes, latencies, signal-to-noise | **yes**, [`results/`](../results/) | CC BY 4.0 |
-| **Raw EMG recordings** | **no** | available on request |
-| **Session logs** (placement, timings, free-text notes) | **no** | held by the study team |
+| **Raw EMG recordings** | no | available on request |
+| **Derived data** — picked motor thresholds, per-pulse amplitudes, latencies, signal-to-noise | no | available on request |
+| **Session logs** (placement, timings, free-text notes) | no | held by the study team |
 
-**Raw recordings are available from the authors on request**, subject to the consent and ethics
-terms of the study. `TO CONFIRM — the contact point and any data-sharing agreement required.`
+This repository contains **analysis code, notebooks and documentation only**. `tSCS_CHUV_data/`
+and `results/` are both `.gitignore`d: running the notebooks populates them on your own machine
+and they are never committed.
 
-Session logs are excluded because they contain free-text clinical notes. Raw recordings are
-excluded for size and because they are the primary record of a human-subject study. Everything
-needed to check the published numbers against their inputs is in `results/`.
+**Both the raw recordings and the derived data are available from the authors on request**,
+subject to the consent and ethics terms of the study.
+`TO CONFIRM — the contact point and any data-sharing agreement required.`
 
-Participants appear only as `P03`–`P06`. Session dates are retained because the analysis depends
-on which recordings belong together.
+Raw recordings are withheld because they are the primary record of a human-subject study. The
+derived measurements are withheld because, although they carry no identifiers, they are
+per-participant data from a small cohort and their release is the study's decision to make, not a
+side effect of publishing code. Session logs are withheld because they contain free-text clinical
+notes.
+
+Where participants are named in code or documentation they appear only as `P03`–`P06`. Session
+dates are retained because the analysis depends on which recordings belong together.
+
+The sections below document the **file formats**, so that data obtained from the authors can be
+read and audited — not because the files are here.
 
 ---
 
 ## Derived data — `results/<session>/`
+
+*Not distributed here; written by the notebooks when you run them. Format documented so the files
+can be read and checked.*
 
 One file per source recording, named `<prefix>_<source filename>.csv`. The source recording's
 filename is preserved in every file and in a `source_file` column, so a derived row can always be
@@ -71,8 +86,8 @@ picked in one block and not another — figures label that case explicitly.
 
 ## Raw recordings — format
 
-Not in this repository; this section documents the format so the derived files can be audited
-against them.
+Not in this repository either; this section documents the format so the derived files can be
+audited against them.
 
 One CSV per recording, named by protocol and timestamp:
 
